@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rorydotgames.LeapARAlignment"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+	<uses-sdk android:minSdkVersion="29" android:targetSdkVersion="33" />
+
+	<!-- Permissions for VR -->
+	<uses-feature android:name="android.hardware.vr.headtracking" android:required="true" android:version="1" />
+	<uses-feature android:name="android.hardware.vr.controller" android:required="false" />
+  <uses-permission android:name="android.Manifest.permission.RECORD_AUDIO"/>
+	<uses-permission android:name="com.oculus.permission.HAND_TRACKING" />
+	<uses-feature android:name="oculus.software.handtracking" android:required="false" />
+	<uses-feature android:name="com.oculus.feature.CONTEXTUAL_BOUNDARYLESS_APP" android:required="true" />
+
+	<application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+		<!-- Main Unity Activity -->
+		<activity android:name="com.unity3d.player.UnityPlayerActivity"
+                  android:launchMode="singleTask"
+                  android:configChanges="keyboardHidden|orientation|screenSize|uiMode|screenLayout|smallestScreenSize|fontScale"
+                  android:screenOrientation="landscape"
+                  android:resizeableActivity="false">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+	</application>
+</manifest>

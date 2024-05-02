@@ -1,0 +1,54 @@
+{
+    "name": "Pico Actions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "b69c439d-39e2-4a16-bab1-74f66bed89ad",
+            "actions": [
+                {
+                    "name": "Stick",
+                    "type": "Value",
+                    "id": "211476e7-d168-4a72-8144-997545e30211",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Mode",
+                    "type": "Button",
+                    "id": "7a930388-fc2a-4738-b85d-218081ca68ac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "19905699-be8b-4166-9fc4-94b5c43cf5fc",
+                    "path": "<XRController>/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Stick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "985210be-2dd4-4c38-85f4-8f5ea6b44189",
+                    "path": "<XRController>/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mode",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
